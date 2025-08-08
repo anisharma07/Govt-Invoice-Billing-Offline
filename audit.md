@@ -108,10 +108,21 @@ Helper functions are duplicated between `utils/helper.ts` and `components/Menu/M
 
 ## Summary
 
-- **1 empty file** to delete
+- **1 empty file** to delete ✅ **REMOVED** - `camera-service.ts` deleted
 - **2 files** with commented blockchain imports to clean up
 - **2 helper functions** duplicated unnecessarily
 - **1 data file** potentially unused (app-data-new.ts)
 - **1 dependency** potentially unused (@capacitor/camera)
+- **1 server feature** ✅ **REMOVED** - "Export as PDF via Server" button and related functionality removed
 
-Overall, the codebase is in good shape after the blockchain/server removal. Most services and utilities are actively used. The main cleanup needed is removing the empty camera service file and duplicate helper functions.
+## Recent Changes (August 8, 2025)
+
+✅ **COMPLETED**: Removed "Export as PDF via Server" button and all related server functionality:
+
+- Removed server PDF button from Menu.tsx
+- Removed `doGenerateServerPDF` function
+- Removed all server PDF state variables and loading states
+- Cleaned up MenuDialogs.tsx to remove server PDF dialog and props
+- Removed unused imports (`server` icon, `cloudUpload` for server)
+
+Overall, the codebase is in excellent shape after the blockchain/server removal. Most services and utilities are actively used. The main cleanup needed is removing the empty camera service file and duplicate helper functions.
