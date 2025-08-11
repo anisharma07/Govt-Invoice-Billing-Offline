@@ -1,6 +1,6 @@
 # 📁 GitHub Workflows & Automation
 
-This directory contains automated workflows and documentation for the ScheduleX project.
+This directory contains automated workflows and documentation for the Govt Invoice project.
 
 ## 🚀 Available Workflows
 
@@ -38,14 +38,17 @@ Welcomes new contributors and provides guidance.
 ## 🚀 Quick Start for Releases
 
 1. **Setup Secrets** (one-time setup)
+
    - Follow [`SECRETS_SETUP.md`](SECRETS_SETUP.md)
    - Add 4 required secrets to your repository
 
 2. **Create Release PR**
+
    - Add `release` label OR `[release]` in title
    - Include version bump hints: `[major]`, `[minor]`, or leave for patch
 
 3. **Merge to Main**
+
    - Workflow automatically triggers
    - APK gets built and released
    - Version gets updated across files
